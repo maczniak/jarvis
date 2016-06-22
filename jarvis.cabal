@@ -19,9 +19,10 @@ library
                        Jarvis.Hint.All
                        Jarvis.Hint.BadCovariantDefinitionOfEquals
                        Jarvis.Hint.BadComparisonWithBoolean
+                       Jarvis.Hint.IfStmtsMustUseBraces
                        Jarvis.Hint.JavaSyntaxHelper
-                       Jarvis.Hint.UnconditionalIfStatement
                        Jarvis.Hint.Type
+                       Jarvis.Hint.UnconditionalIfStatement
                        Jarvis.Idea
                        Jarvis.Settings
   other-modules:       Paths_jarvis
@@ -55,6 +56,8 @@ test-suite jarvis-test
   other-modules:       Jarvis.Hint.BadComparisonWithBooleanSpec
                        Jarvis.Hint.BadCovariantDefinitionOfEqualsSpec
                        Jarvis.Hint.Helper
+                       Jarvis.Hint.IfStmtsMustUseBracesSpec
+                       Jarvis.Hint.UnconditionalIfStatementSpec
   ghc-options:         -threaded -rtsopts -with-rtsopts=-N
   default-language:    Haskell2010
 
